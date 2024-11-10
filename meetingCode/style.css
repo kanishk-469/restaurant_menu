@@ -1,0 +1,340 @@
+/* reset default styling */
+body{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Flexbox Layout */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+.logo img {
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Logo Text */
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Nav Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 34em;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d80d0d;
+}
+
+/* Login/Signup Button Styling */
+header > div button {
+    background-color:#e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header > div button:hover {
+    background-color: #e67e22;
+}
+
+.offer_section{
+    width:100vw;
+    height:70vh;
+    background-color: #DDDDDD;
+    /* position:relative; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://placehold.co/600x200?text=offer-image);
+
+}
+.offer-btn{
+    /* position:absolute;
+    top:20em; */
+    color:white;
+    align-self: flex-end;
+    background-color: #333333;
+    padding: 1em 3em;
+    margin-bottom: 3em;
+    border-style:none;
+    cursor: pointer;  
+}
+
+.menu_section ,.trending_section ,.starters_section ,.beverages_section ,.main_course ,.combo_section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+
+}
+.our_menu_heading{
+    font-weight: 900;
+    font-size:3em;
+   
+}
+
+.red-border{
+    background-color:red;
+    width:90px;
+    height:4px;
+    border-radius: 1em;
+    margin: 1em 0em;
+}
+
+.menu_body_container{
+    width:80vw;
+    height: 70vh;
+    background-color:#ECE9E9;
+}
+
+.category_heading{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category_name{
+    margin-left:0em;
+    padding:0.3em;
+    font-size:2rem;
+    /* border-style: solid; */
+    border-left-style: solid;
+    border-color: red;
+    border-width: 0.2em;
+    /* border-left: #750606; */
+}
+
+.view_all_btn{
+    margin-right: 1rem;
+    padding: 0.4em 1em;
+    font-size:16px;
+   background-color: black;
+   color:white;
+   border-style:none;
+   border-radius:0.2em;
+   cursor:pointer;
+}
+
+.menu_items{
+    /* background-color: #333333; */
+    margin: 0em 6em;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.menu_cards{
+    background-color: #ffffff;
+    border-radius: 0.4em;
+    /* padding:0em 0.6em; */
+    /* margin-right:3em; */
+    /* width:20em; */
+}
+.menu_image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:20vw;
+    /* height:200px; */
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+
+}
+.menu_item_addToCart_btn{
+ width:20vw;
+ font-size:1em;
+ padding: 18px 20px;
+ background-color: #090808;
+ color:white;
+ border-style:none;
+ border-bottom-left-radius: 0.4em;
+ border-bottom-right-radius: 0.4em;
+
+}
+.padding{
+    padding-left: 1em;
+}
+.item_price{
+ font-weight:700;
+}
+/* .strike{
+
+} */
+.item_description{
+    color:grey;
+}
+.menu_item_name{
+    color:red;
+
+}
+
+/* .footer_section{
+    background-color: #333333;
+    height:40vh;
+    display:flex;
+    flex-direction: row; /* by default */
+    /* justify-content: space-around;
+    align-items: center;
+} */ 
+
+.footer {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 40px 20px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center the footer content */
+  }
+  
+  .footer-section {
+    flex: 1 1 250px; /* Flex-grow, flex-shrink, flex-basis */
+    margin: 20px 10px;
+  }
+  
+  .footer-logo {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+ }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #e63946; 
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li a:hover {
+    color: #e63946;
+  }
+  
+  .social-links {
+    margin-bottom: 15px;
+  }
+  
+  .social-links p {
+    margin: 0 0 10px 0;
+  }
+  
+  .social-link {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    color: #e63946;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .subscribe-form input[type="email"] {
+    flex: 1 1 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e63946;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #d62828;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-bottom a:hover {
+    color: #e63946;
+  }
